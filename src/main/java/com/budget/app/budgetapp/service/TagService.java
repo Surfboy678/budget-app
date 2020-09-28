@@ -9,9 +9,9 @@ public interface TagService {
 
     public Optional<Tag> getTagByName(String tagName);
 
-    public List<Optional<Tag>> getAllTags();
+    public Optional<List<Tag>> getAllTags();
 
-    public void deleteTag();
+    public void deleteTag(Long tagId);
 
     public Tag createTag(String tagName);
 }
